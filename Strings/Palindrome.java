@@ -4,6 +4,7 @@ public class Palindrome {
         for(int i=0;i<str.length()/2;i++){
             if(str.charAt(i) != str.charAt(str.length()-i-1)){
                 isPalindrome=false;
+                return isPalindrome;
             }
         }
         return isPalindrome;
