@@ -8,10 +8,10 @@ public class firstUniCh {
             map.put(ch,map.getOrDefault(ch,0)+1);
         }
 
-        for(int i=0;i<s.length();i++){
-            char ch = s.charAt(i);
+        for(int j=0;j<s.length();j++){
+            char ch = s.charAt(j);
             if(map.get(ch)==1){
-                return i;
+                return j;
             }
         }
         return -1;
