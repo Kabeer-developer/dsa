@@ -1,18 +1,17 @@
 public class BuyandSellStock{
     public static void main(String[] args) {
-        int result=0;
-        int[] arr = {7,1,3,4,6,9};
+        
+        int[] arr = {1,7,5,3,6,4};
 
-        for(int i=0;i<arr.length-1;i++){
-            for(int j=i+1;j<arr.length;j++){
-               int currentBuy = arr[i];
-                int currentSell = arr[j];
-              int  profit = currentSell-currentBuy;
-                if(profit>result){
-                    result=profit;
-                }
-            }
+       int minPrice = arr[0];
+       int maxProfit =0;
+       for(int i=1;i<arr.length;i++){
+        if(arr[i]<minPrice){
+            minPrice=arr[i];
         }
-        System.out.println(result);
+        int profit = arr[i]-minPrice;
+        maxProfit = Math.max(profit,maxProfit);
+       }
+        System.out.println(maxProfit);
     }
 }
