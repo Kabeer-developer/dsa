@@ -1,24 +1,26 @@
-import java.util.Arrays;
+import java.util.HashSet;
 
-public class consecutiveSequence{
+public class consecutiveSequence {
     public static void main(String[] args) {
-        int[] arr = {1,2,100,200,101,3,4};
-        Arrays.sort(arr);
-        int result =0;
-        int count=1;
-        if(arr.length==1){
-            System.out.println(count);
-        }
-        for(int i=0;i<arr.length-1;i++){
-            if(arr[i+1]-arr[i] == 1){
+
+       int[] arr = {7,6,3,2,1,78,5,4,43,32};
+       HashSet<Integer> set = new HashSet<>();
+        int longest =0;
+       for(int num : arr){
+        set.add(num);
+       }
+
+       for(int num : arr){
+        if(!set.contains(num-1)){
+            int count =1;
+
+            while(set.contains(num+count)){
                 count++;
-                if(count>result){
-                    result=count;
-                }
-            } else {
-                count=1;
             }
+
+            longest = Math.max(longest,count);
         }
-        System.out.println(result);
+       }
+       System.out.println(longest);
     }
 }
