@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class mergeIntervals{
+public class MergeIntervals{
     public static void main (String[] args){
         int[][] arr = {
             {1,2},
@@ -31,5 +31,6 @@ public class mergeIntervals{
        for(int[] x: ans){
         System.out.println(Arrays.toString(x));
        }
+       //return ans.toArray(new int[ans.size()][]);
     }
 }

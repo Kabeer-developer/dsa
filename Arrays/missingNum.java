@@ -1,4 +1,4 @@
-public class missingNum {
+public class MissingNum {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,7};
         int currentSum =0;

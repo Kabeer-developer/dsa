@@ -1,4 +1,4 @@
-public class containerWater {
+public class ContainerWater {
     public static int containerWithMostWater(int[] arr){
         int max =0;
         int left =0;

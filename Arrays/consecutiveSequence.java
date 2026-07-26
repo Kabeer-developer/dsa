@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class consecutiveSequence {
+public class ConsecutiveSequence {
     public static void main(String[] args) {
 
        int[] arr = {7,6,3,2,1,78,5,4,43,32};

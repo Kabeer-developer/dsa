@@ -1,10 +1,10 @@
-public class maxSumArray {
+public class MaxSumArray {
     public static void main(String[] args) {
 
         int[] arr = {1,2,-2,3,4,10,-1,5,6};
 
         int sum = 0;
-        int max = 0;
+        int max = Integer.MIN_VALUE;
 
         int start = 0;
         int ansStart = 0;

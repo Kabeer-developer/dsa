@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class checkSorted {
+public class CheckSorted {
     public static boolean checkSortedArr(int[] arr){
         boolean isSorted = true;
         for(int i=0;i<arr.length-1;i++){
