@@ -19,6 +19,6 @@ public class LargestEle {
       }
 
       System.out.println(max);
-
+      sc.close();
     }
 }

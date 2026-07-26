@@ -1,5 +1,5 @@
 public class trapWater {
-    public static int trapWater(int[] arr){
+    public static int trapWaterPrlm(int[] arr){
         int n = arr.length;
         int water=0;
 
@@ -19,6 +19,6 @@ public class trapWater {
     }
     public static void main(String[] args) {
         int[] arr = {4,2,0,3,2,5};
-        System.out.println(trapWater(arr));
+        System.out.println(trapWaterPrlm(arr));
     }
 }
