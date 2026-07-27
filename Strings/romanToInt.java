@@ -5,6 +5,7 @@ class romanToInt{
             case 'V': return 5;
             case 'X': return 10;
             case 'L': return 50;
+            case 'C': return 100;
             case 'D': return 500;
             case 'M': return 1000;
         }
@@ -33,7 +34,7 @@ class romanToInt{
         System.out.println(romanToIntConvert(roman));
         String roman2 = "VI";
         System.out.println(romanToIntConvert(roman2));
-        String roman3 = "XXX";
+        String roman3 = "MCMCXIV";
         System.out.println(romanToIntConvert(roman3));
     }
 }
