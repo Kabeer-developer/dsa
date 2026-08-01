@@ -3,15 +3,16 @@ public class AllSubArray {
         int[] arr = {1,2,3,4};
 
         int size =1;
-        for(int i=0;i<arr.length;i++){
-            for(int j=0;j<=arr.length-size;j++){
-                for(int k=j;k<j+size;k++){
-                    System.out.print(arr[k]+" ");
-                }
-                System.out.println();
+        for(int l=0;l<arr.length;l++){
+        for(int i=0;i<=arr.length-size;i++){
+            for(int j=i;j<i+size;j++){
+                System.out.print(arr[j]);
             }
-            if(size==arr.length) return;
-            size++;
+            System.out.println();
+           
         }
+         if(size==arr.length) return;
+            size++;
+    }
     }   
 }
