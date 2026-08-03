@@ -35,7 +35,7 @@ public class DeleteNode {
         }
 
         if(position==0){
-            head = head.next;
+            return head.next;
         }
         Node temp = head;
 
